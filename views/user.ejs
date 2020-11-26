@@ -1,0 +1,18 @@
+<h1>
+    Sign Up Form
+</h1>
+<form action="/register" method="post">
+    <input type="text" name="username" placeholder="username" required>
+    <input type="password" name="password" placeholder="password" required>
+    <button>Submit</button>
+    <div>
+        <% register.forEach(function(registerData){ %>
+            <div>
+                <h2><%= registerData.username %></h2>
+                <h4><%= registerData.password %></h4>
+                <h3><%= registerData.created %></h3>
+                
+            </div>
+        <% }) %>
+    </div>
+</form>

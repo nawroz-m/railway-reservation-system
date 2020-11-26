@@ -1,0 +1,52 @@
+<%- include("partials/header") %>
+    
+    <style>
+        body{
+              background-image: url("https://images.unsplash.com/uploads/1413387158190559d80f7/6108b580?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"); /* The image used */
+        }
+    </style>
+    <div class="container">
+       <!--<header class="jumbotron">-->
+       <!--     <h1><marquee bgcolor="#0FBF00">Welcome To Railway Reservation System  </marquee> </h1>-->
+       <!-- </header>-->
+    
+        <div>
+         <p class="welcome-text">
+            <strong>WELCOME TO<br> BOOK</strong> YOUR <strong>TRAIN</strong><br><br>
+            We save your time both while purchasing,<br>
+            the check-in and during the travel
+        </p>
+        </div>
+    
+        <div class="rout">
+        
+            <form action="/ticket" method="post" name="railway">
+            <center>
+            <h1><marquee bgcolor="#0FBF00"> Railway Reservation System Search Down Your Trip </marquee> </h1>
+            <table>
+             <tr>
+              <td>From:</td>
+              <td><input type="text" size="18" name=""railway" placeholder="from"</td>
+             
+             <tr>
+             <td>To:</td>
+             <td><input type="text" size="18" name="txt2" placeholder="to"</td>
+            </tr>
+            <tr>
+                <td>Travelling Date:</td>
+                <td><input type="date" name="travel-date" placeholder="travelling date" </td></tr>
+             <tr>
+                <td>Travelling Persons:</td>
+                <td><input type="number"  min="1" max="5" name="persons" placeholder="persons"</td>
+             </tr> 
+             
+              <tr>
+               <td><input type="submit" value="Serch"</td>
+               <td><input type="reset" value="Cancel"</td></tr>   
+             </table>   
+        
+        </div>
+     
+    </div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,65 @@
+<%- include("partials/header") %>
+  
+   <style>
+        body{
+              background-image: url("https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGJhY2tncm91bmR8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"); /* The image used */
+        }
+    </style>
+  
+  <div>
+      <form name="railway" action="/bok/pay" method="get">
+            <center>
+            <h1 class="mq">
+                <marquee bgcolor="#0FBF00">
+                    
+                A train ticket is a ticket issued by a 
+                railway operator that enables the bearer 
+                to travel on the operator's network or a partner's network. 
+                Make sure you entered the correct datails down bellow.
+                </marquee> 
+            </h1>
+            
+         <table class="table">
+         <tr>
+             <td>From:</td>
+             <td><input type="text" name="stratDest" required placeholder="Start destination" </td>
+             </tr>
+                 <tr>
+                 <td>To:</td>
+                 <td><input type="text" name="endDest" required placeholder="End destination"</td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required placeholder="Your name"</td></tr>
+                 <tr>
+                     <td>Age:</td>
+                     <td><input type="number" name="age" min="1" required placeholder="Your age"</td>
+                 </tr> 
+                <tr>
+                     <td>Address:</td>
+                     <td><input type="text" required name="currentAddress" placeholder="Current address"</td></tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                    <tr>
+                      <td>Payment options:</td>
+                    <td> 
+              <input type="radio" name="payment" value="cc" />Credit Card <br />
+              <input type="radio" name="payment" value="dc" />Debit card <br /> 
+              <input type="radio" name="payment" value="wallet">wallet<br/>
+            </td>
+              
+              <tr>
+               <td><input type="submit" value="submit"></input>
+                    Please go to <strong><a href="/bok/pay">Payment</a></strong>
+                    after submit.
+               </td>
+               <!--<td><a href="/bok/pay" target="_blank" class="btn btn-info"  role="button" >Go To Payment</a> </td>-->
+               <td><input type="reset" value="Cancel"</td></tr>   
+             </table>   
+    <!--    </body>-->
+    <!--</html>-->
+  </div>
+        
+<%- include("partials/footer") %>
