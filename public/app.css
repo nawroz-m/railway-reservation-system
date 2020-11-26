@@ -1,0 +1,107 @@
+body {
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 350px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.welcome-text {
+      color: white;
+  
+      font-style: oblique 40deg;    
+      position: relative;
+      top: 150px;
+      left: 200px;
+      width: 400px;
+      font-size:30px;
+}
+
+.rout{
+    color: white;
+      position: absolute;
+      left: 700px;
+      top: 200px;
+      font-style: normal;    
+      width: 360px;
+      font-size:20px;
+      background-color: gray;
+}
+
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.form-inline {
+  
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+.log {
+  
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.table {
+
+      color: white;
+      position: absolute;
+      left: 450px;
+      top: 200px;
+      font-style: normal;    
+      width: 500px;
+      font-size:20px;
+      background-color: gray;
+  
+}
+
+input {
+  background-color: #f2f2f2;
+  font-sryle: normal;
+  font-size: 20px;
+  
+}
+.mq {
+      position: absolute;
+      width: 1365px;
+      top: 100px;
+      font-style: normal;    
+     
+      font-size:20px;
+      background-color: gray;
+}
